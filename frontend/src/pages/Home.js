@@ -1,11 +1,11 @@
 import { useEffect }from 'react'
 import { useWorkoutsContext } from "../hooks/useWorkoutsContext"
 import { useAuthContext } from "../hooks/useAuthContext"
-const API_URL = process.env.REACT_APP_API_URL
-
 // components
 import WorkoutDetails from '../components/WorkoutDetails'
 import WorkoutForm from '../components/WorkoutForm'
+
+const API_URL = process.env.REACT_APP_API_URL
 
 const Home = () => {
   const {workouts, dispatch} = useWorkoutsContext()
